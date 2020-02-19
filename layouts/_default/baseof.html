@@ -20,7 +20,7 @@
   </nav>
   {{ end -}}
   <nav>
-    <h1><a href="{{ .Site.BaseURL }}" class="{{ if .IsHome }}active{{ end }}">Home</a></h1>
+    <h1><a href="{{ .Site.BaseURL }}" class="{{ if .IsHome }}active{{ end }}">home</a></h1>
     {{ $currentNode := . }}
     {{- $firstUrlElement := print (index (split .URL "/") 1) -}}
     {{- range $menu := .Site.Menus.main -}}
@@ -29,7 +29,7 @@
     </a></h1>
     {{- end -}}
   </nav>
-    {{- if .Site.Params.subtitle }}<h2>{{ .Site.Params.subtitle }}</h2>{{- end }}
+    {{- if .Site.Params.subtitle }}<h2><i>{{ .Site.Params.subtitle }}</i></h2>{{- end }}
 </header>
 <main>
   <article>
