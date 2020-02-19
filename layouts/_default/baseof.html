@@ -28,6 +28,7 @@
       {{ .Name }}
     </a></h1>
     {{- end -}}
+
   </nav>
     {{- if .Site.Params.subtitle }}<h2><i>{{ .Site.Params.subtitle }}</i></h2>{{- end }}
 </header>
@@ -37,15 +38,20 @@
   </article>
 </main>
 <footer>
-  <div>
-    <div>
+    <span>
       {{ if .Site.Copyright -}}
         {{- .Site.Copyright | markdownify -}}
       {{- else -}}
         &copy; 2019 Linlin Yan. <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">CC-BY-4.0</a>
       {{- end -}}
-    </div>
-  </div>
+    </span>
+
+    <span class="links">
+    {{- range .Site.Menus.link -}}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    &nbsp;
+    {{- end -}}
+    </span>
 </footer>
 {{ template "_internal/google_analytics_async.html" . -}}
 {{ partial "github-corner.html" . -}}
