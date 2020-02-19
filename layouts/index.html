@@ -5,10 +5,4 @@
 <div>
   {{ .Content -}}
 </div>
-<ul>
-  {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
-  <li>{{ .Date.Format "Mon, Jan 2, 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  {{ end -}}
-</ul>
-{{ template "_internal/pagination.html" . -}}
 {{ end -}}
