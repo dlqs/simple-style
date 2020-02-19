@@ -1,6 +1,6 @@
-body{margin:16px auto;max-width:677px;padding:0 10px;color:#333;line-height:1.6}
-h1{line-height:2;font-size:160%}
-h2{line-height:1.6;font-size:120%}
+body{margin:32px;max-width:770px;padding:0 10px;color:#333;line-height:1.6}
+h1{line-height:1.6;font-size:150%;}
+h2{line-height:1.4;font-size:120%}
 h3,h4,h5,h6{line-height:1.2;font-size:100%}
 header{margin:0;padding:0;border-bottom:1px solid #999;line-height:1}
 footer{margin:0;padding:10px 0;border-top:1px solid #999;line-height:1;text-align:center}
@@ -12,8 +12,9 @@ a:visited{color:#009}
 a:hover{color:#f00}
 header a,header a:visited,footer a,footer a:visited,h1 a,h1 a:visited,h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{text-decoration:none;color:#333}
 header a:hover,footer a:hover,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{text-decoration:none;color:#f00}
-nav{padding:10px 0;text-align:right}
-nav a{padding-left:15px}
+nav{padding:10px 0;text-align:left}
+nav h1{display: inline-block}
+nav h1:not(:first-child){padding-left:20px}
 table{border-collapse:collapse;font-size:.8em;margin:10px auto}
 th,td{border:1px solid gray;padding:2px 5px}
 code{border:1px dotted #999;background-color:#f0f0f0;padding:1px 2px;line-height:200%;word-wrap:break-word}
@@ -35,3 +36,9 @@ svg:hover.permalink{color:#f00;fill:currentColor}
 .content h5{padding:0;margin:10px 0 0}
 .content h6{padding:0;margin:10px 0 0}
 .content p{padding:0;margin:10px 0}
+@media screen and (max-width: 769px) {
+  nav h1 {
+    display:block;
+    padding: 0 !important;
+  }
+}
