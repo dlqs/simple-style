@@ -10,5 +10,7 @@
   <li>{{ with .Date }}{{ .Format "Mon, Jan 2, 2006" }} - {{ end }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Description }}: {{ . }}{{ end }}</li>
   {{ end -}}
 </ul>
-</main>
+
+
+{{ template "_internal/pagination.html" . -}}
 {{ end }}
