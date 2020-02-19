@@ -7,8 +7,8 @@ footer{margin:0;padding:10px 0;border-top:1px solid #999;line-height:1;text-alig
 p,div,ul,ol{margin:10px 0}
 img{margin:10px auto;width:90%;max-width:600px;padding:0 10px;height:auto;display:block}
 hr{border:none;border-top:1px dashed #999;color:#fff;background-color:#fff;height:1px}
-a{color:#2077b2;word-wrap:break-word;text-decoration:underline;}
-a:visited{color:#009}
+a{color:#2077b2;word-wrap:break-word;}
+a:visited{color:rgb(0, 81, 255);}
 a:hover{color:#333}
 header a,header a:visited,footer a,footer a:visited{text-decoration:none;color:#bdbdbd}
 header a:hover,footer a:hover, header a.active{text-decoration:none;color:#333}
