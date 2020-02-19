@@ -21,7 +21,7 @@
   {{ end -}}
   <nav>
     <h1><a href="{{ .Site.BaseURL }}" class="{{ if .IsHome }}active{{ end }}">home</a></h1>
-    {{ $currentNode := . }}
+    {{- $currentNode := . -}}
     {{- $firstUrlElement := print (index (split .URL "/") 1) -}}
     {{- range $menu := .Site.Menus.main -}}
     <h1><a href="{{ .URL }}" class="{{ if (eq ($firstUrlElement|lower) ($menu.Name|lower)) }}active{{ end }}">
