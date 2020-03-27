@@ -1,7 +1,9 @@
-body{margin:16px 32px;max-width:800px;padding:0 10px;color:#333;line-height:1.6;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px}
+body{margin:16px 48px;max-width:840px;padding:0 10px;color:#333;line-height:1.6;font-family:Georgia, 'Times New Roman', Times, serif;font-size:18px}
 h1{line-height:1.6;font-size:160%;}
-h2{line-height:1.3;font-size:120%}
-h3,h4,h5,h6{line-height:1.2;font-size:100%}
+h2{line-height:1.6;font-size:150%}
+h3{line-height:1.4;font-size:130%;}
+h4{line-height:1.1;font-size:110%;}
+h5,h6{line-height:1.3;font-size:100%}
 header{margin:0;padding:0;border-bottom:1px solid #999;line-height:1}
 footer{margin:0;padding:10px 0;border-top:1px solid #999;line-height:1;}
 p,div,ul,ol{margin:10px 0}
@@ -37,7 +39,8 @@ svg:hover.permalink{color:#f00;fill:currentColor}
 .content h5{padding:0;margin:10px 0 0}
 .content h6{padding:0;margin:10px 0 0}
 .content p{padding:0;margin:10px 0}
-@media screen and (max-width: 799px) {
+figure { text-align: center; }
+@media screen and (max-width: 839px) {
   body {
     margin: 16px;
     font-size: 16px;
